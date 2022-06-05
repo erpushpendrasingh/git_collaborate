@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        #container{
+            height: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: #1c2937;
+            border-radius: 20px;
+        }
+        #container>div:first-child{
+            height: 100%;
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-left: 20px;
+        }
+        #container>div:last-child{
+            width: 30%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 100%;
+        }
+        #container>div>div{
+            margin: auto;
+            color: white;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>Reebok</div>
+        <div>
+            <div>Men</div>
+            <div>Women</div>
+            <div>Login</div>
+            <div>Signup</div>
+        </div>
+    </div>
+</body>
+</html>
