@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mensPage</title>
+    <style>
+        #contaner{
+            /* border:1px solid green; */
+            width:100%;
+            height:600px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,300px);
+            display: flex;
+            margin: auto;
+            gap:10px;
+        }
+        #contaner>div{
+           width: 40%;
+           height:500px;
+           /* border: 1px solid red; */
+           margin: auto;
+            
+        }
+        #contaner>div>div{
+            width:35%;
+            /* height:250px; */
+            /* border:1px solid blue; */
+            display:block;
+            margin: auto;
+        }
+        #contaner>img{
+            width:100%;
+            /* height:100%; */
+        }
+        h1{
+            margin-left: 20px;
+            display: flex;
+
+        }
+        p{
+            margin-left: 20px;
+        }
+        p:last-child{
+            color: green;
+        }
+      
+        
+
+    </style>
+</head>
+<body>
+    <div id="contaner">
+            <div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/300/300/jdt4n0w0/jacket/r/p/b/m-gsjkt1793blkwht-gritstones-original-imaf2mph7hfzpx6g.jpeg?q=90" alt="">
+                </div>
+                <h1>Jacket</h1>
+                <p>Sleeveless Solid Men Casual Jacket</p>
+                <h1>₹331</h1>
+                <p>₹899  -63% off</p>
+            </div>
+            <div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/300/300/jdt4n0w0/jacket/r/p/b/m-gsjkt1793blkwht-gritstones-original-imaf2mph7hfzpx6g.jpeg?q=90" alt="">
+                </div>
+                <h1>Jacket</h1>
+                <p>Sleeveless Solid Men Casual Jacket</p>
+                <h1>₹331 </h1>
+                <p>₹899  -63% off</p>
+            </div>
+    </div>
+</body>
+</html>
+
+<!-- <script>
+    let main = [
+        {img:"https://rukminim1.flixcart.com/image/580/696/k3dc7m80/jacket/d/b/g/l-hljk000017-highlander-original-imafmgqkvjxsumpw.jpeg?q=50"},
+        {img:"https://rukminim1.flixcart.com/image/580/696/k3dc7m80/jacket/d/b/g/l-hljk000017-highlander-original-imafmgqkvjxsumpw.jpeg?q=50"},
+        {name:"jacket"},
+        {sor:"Men coton"},
+        {price:350},
+        {discount:"-4999"},
+        {percent:"70%"},
+
+        {img:"https://rukminim1.flixcart.com/image/580/696/k3dc7m80/jacket/d/b/g/l-hljk000017-highlander-original-imafmgqkvjxsumpw.jpeg?q=50"},
+        {img:"https://rukminim1.flixcart.com/image/580/696/k3dc7m80/jacket/d/b/g/l-hljk000017-highlander-original-imafmgqkvjxsumpw.jpeg?q=50"},
+        {name:"jacket"},
+        {sor:"Men coton"},
+        {price:350},
+        {discount:"-4999"},
+        {percent:"70%"},
+    ];
+
+    main.forEach(function(el){
+        let box = document.createElement("div>div");
+
+        let photo = document.createElement("img");
+        photo.setAttribute("src".el.img);
+
+        let proName = document.createElement("h1");
+        proName.innerText = el.name;
+
+        let sorName = document.createElement("p");
+        sorName.innerText = el.sor;
+
+        let disco = document.createElement("h3");
+        disco.innerText = el.discount;
+
+        let chut = document.createElement("h4");
+        chut.innerText = el.percent;
+
+        box.append(photo,proName,sorName,disco,chut);
+
+        document.querySelector("#contaner").append(box);
+
+    })
+</script> -->
