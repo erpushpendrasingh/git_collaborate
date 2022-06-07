@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #container{
+            height: 620px;
+            width: 850px;
+          background-image: linear-gradient(#12c2e9,#c471ed);
+          margin: auto;
+          display: grid;
+          justify-content:center;
+          align-items: center;
+        }
+        #box{
+            background-color: white;
+            height: 560px;
+            width: 360px;
+            margin: 20px auto; 
+            display:flex;
+            justify-content: center;
+            border-radius: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        #email{
+            border: 0px;
+            border-bottom: 2px solid gray;
+            display: inline-block;
+            width: 80%;
+            margin-bottom: 20px;
+            outline: none;
+        }
+        #password{
+            border: 0px;
+            border-bottom: 2px solid gray;
+            width: 80%;
+        margin-bottom: 20px;
+        outline: none;
+            
+        }
+        button{
+            background-image: linear-gradient(#12c2e9,#c471ed);
+            border: 0px;
+            width: 80%;
+            padding: 10px;
+            
+        }
+        #forgot{
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+            align-items: center;
+            margin-top: 30px;
+        
+        }
+        #sign p{
+            
+            margin: 0;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <h1><b>Login</b></h1>
+            <input id="email" type="text" placeholder="Email" ><br>
+            <input id="password" type="text" placeholder="Password" ><br>
+            <button>Login</button>
+            <div  id="forgot">
+            <p >Forgot <a href="">Password</a>?</p>
+        </div>
+        <div id="sign" >
+            <p >Don't have an account? <a href="">Sign up</a></p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
